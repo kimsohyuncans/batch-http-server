@@ -1,8 +1,8 @@
-### Batch the expensive operations in API
+### Simple Batch the expensive operations in API
 
 #### prerequisite
-[vegeta](https://github.com/tsenart/vegeta)
-[golang](https://golang.org/)
+- [vegeta](https://github.com/tsenart/vegeta)
+- [golang](https://golang.org/)
 
 ### How To Run
 
@@ -16,4 +16,5 @@ simulate the load test
 echo "GET http://localhost:1323/summary" | vegeta attack -duration=30s -rate=5 -timeout=3s | vegeta report
 ```
 
-you can monitor the proccess in "http://localhost:1323/stats"
+you can monitor the proccess at http://localhost:1323/stats
+refresh the page prequently to see job changes when load test running
